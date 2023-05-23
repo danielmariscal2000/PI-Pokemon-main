@@ -34,6 +34,7 @@ export default function Filter ({setCurrentPage, setOrder}){
 
   const handleFilterStr = (e) => {
     e.preventDefault();
+    console.log(e.target.value);
     dispatch(filterStr(e.target.value));
     setCurrentPage(1);
     setOrder(e.target.value);
@@ -70,14 +71,15 @@ export default function Filter ({setCurrentPage, setOrder}){
 
       <div>
         <h4 className={styles.h4}>Order</h4>
-        <select className={styles.select}>
-            <option>-</option>
+        <select onClick={e => {handleFilterStr(e)}} className={styles.select}>
             <option className={styles.order}>Strength</option>
-            <option value="asc" onClick={e => {handleFilterStr(e)}}>ASC</option>
-            <option value="desc"  onClick={e => {handleFilterStr(e)}}>DESC</option>
-            <option className={styles.order}>Alphabetically</option>
-            <option value="asc" onClick={e => {handleOrderName(e)}}>A - Z</option>
-            <option value="desc" onClick={e => {handleOrderName(e)}}>Z - A</option>
+            <option value="asc">ASC</option>
+            <option value="desc">DESC</option>
+        </select>
+        <select onClick={e => {handleOrderName(e)}} className={styles.select}>
+        <option className={styles.order}>Alphabetically</option>
+            <option value="asc" >A - Z</option>
+            <option value="desc">Z - A</option>
         </select>
       </div>
     </div>

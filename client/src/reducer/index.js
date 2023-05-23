@@ -68,7 +68,6 @@ const rootReducer = (state = initialState, action) => {
             let copy3 = state.pokemons;
             let sortedName = action.payload === 'asc' ?
                 copy3.sort((a, b) => {
-                    console.log(a,b,"aquiiiiiiiiiiiiiiiiiiii22222");
                     return a.name.toLowerCase().localeCompare(b.name.toLowerCase())
                 }) :
                 copy3.sort((a, b) => {
