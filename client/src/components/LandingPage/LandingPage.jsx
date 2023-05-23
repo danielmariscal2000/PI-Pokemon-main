@@ -5,19 +5,9 @@ import styles from './LandingPage.module.css'
 import { useEffect } from 'react';
 export default function LandingPage() {
   async function agregarTypes() {
+    const dataTypes=await axios.get("http://localhost:3001/types");
     const res = await axios.post("http://localhost:3001/types", {
-      types: [
-        "grass",
-        "poison",
-        "fire",
-        "flying",
-        "water",
-        "bug",
-        "normal",
-        "electric",
-        "ground",
-        "fairy",
-      ],
+      types:dataTypes.data
     });
   }
   agregarTypes();
