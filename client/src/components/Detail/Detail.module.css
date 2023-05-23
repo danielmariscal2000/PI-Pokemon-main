@@ -1,0 +1,83 @@
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    margin-top: 2%;
+    width: 30vw;
+    height: 87vh;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 228, 196, 0.616);
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.651);
+}
+
+.h2 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.5rem;
+    color: rgba(48, 30, 9, 0.616);
+}
+
+.p {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1rem;
+    color: rgba(48, 30, 9, 0.616);
+}
+
+.typesContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.typesImg {
+    width: 2vw;
+    height: 2vw;
+}
+
+.text {
+    text-decoration: none;
+    font-family: 'Verdana', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(48, 30, 9, 0.616);
+}
+
+.h5 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(48, 30, 9, 0.616);
+}
+
+.btn {
+    margin-top: 1vh;
+    text-decoration: none;
+    width: 8vw;
+    height: 5vh;
+    background-color: #f3cf3d4d;
+    color: rgb(184, 184, 184);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.651);
+    font-family: 'Verdana', sans-serif;
+    font-size: 0.98rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgba(48, 30, 9, 0.616)
+}
+.image{
+  width: 40%;
+  height: 30%;
+}
